@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion> 
+  <artifactId>Server</artifactId>
+  <name>Server</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties> 
+   <parent>
+    <groupId>com.sirma.itt.javacourse.chatapplication</groupId>
+    <artifactId>ChatApplication</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+   </parent>
+   <groupId>com.sirma.itt.javacourse.chatapplication.server</groupId>  
+  
+   <dependencies>
+   	<dependency>
+   		<groupId>
+   			com.sirma.itt.javacourse.chatapplication.utility
+   		</groupId>
+   		<artifactId>ChatUtility</artifactId>
+   	</dependency>
+   	
+	 <!-- JPA with Hibernate API -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.2.16.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate.common</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>4.0.5.Final</version>
+		</dependency>
+
+
+		<!-- MySQL JDBC -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.35</version>
+		</dependency>
+
+		<!-- EJB API -->
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>javax.ejb-api</artifactId>
+			<version>3.2</version>
+			<scope>provided</scope>
+		</dependency>
+   </dependencies>
+</project>
